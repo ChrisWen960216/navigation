@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
+import Header from './components/header';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.onSearch = this.onSearch.bind(this);
+  }
+
+  onSearch(values) {
+    console.log(values);
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Button type="primary">Hello world</Button>
-        </header>
+        <Header onSearch={this.onSearch} />
       </div>
     );
   }
