@@ -21,6 +21,10 @@
     ],
     "rules": {
         "react/forbid-prop-types":"off",
-        "no-console":"off"
+        "no-console":"off",
+        "max-len":"off",
+        "no-return-assign":"off",
+        "react/require-default-props":"off",
+        "react/destructuring-assignment":"off"
     }
 }
